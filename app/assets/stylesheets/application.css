@@ -1,0 +1,103 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+ 	text-align: center;
+ 	width: 100%;
+ 	font-family: "Avenir";
+ 	margin: 0;
+ 	padding: 0;
+ 	background:  #B1C0C7;
+ }
+
+
+
+ .banner {
+  	background-image: image-url('wmatabus4.jpg');
+  	background-color: #3D3C3A;
+  	height: 100px;
+  	padding-top: 20px;
+}
+
+.textbackground {
+	width: 400px;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+h1  {
+	color: yellow;
+	text-decoration: none;
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	color: #0E258F;
+}
+
+
+
+.issuetable td{
+	padding: 7px; border: white 1px solid;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+table {
+	margin-bottom: 20px;
+}
+
+.issuetable tr:nth-child(odd){
+	background-color: #B7B9B6;
+	border: white 1 px solid;
+	
+}
+
+.issuetable tr:nth-child(even){
+	background-color: white;
+}
+
+th {
+	background-color: #0E258F;
+	color: white;
+}
+
+td {
+	word-wrap: break-word;
+	max-width: 300px;
+}
+
+
+html, body {
+    width: 100%;
+}
+table {
+    margin: 0 auto;
+}
+
+
+@media all and (min-width: 768px)  {
+    .issuetable {
+        max-width: 33.333%;
+    }
+    i {
+        padding: 3px;
+    }
+   
+}
+
