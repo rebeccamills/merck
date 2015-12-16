@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  country: MyString
+  product: MyString
+  strength: MyString
+  marketshare: false
+  volume: false
+  dashboard: MyString
+
+two:
+  country: MyString
+  product: MyString
+  strength: MyString
+  marketshare: false
+  volume: false
+  dashboard: MyString

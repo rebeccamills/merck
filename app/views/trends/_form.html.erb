@@ -1,0 +1,41 @@
+<%= form_for(@trend) do |f| %>
+  <% if @trend.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@trend.errors.count, "error") %> prohibited this trend from being saved:</h2>
+
+      <ul>
+      <% @trend.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :country %><br>
+    <%= f.text_field :country %>
+  </div>
+  <div class="field">
+    <%= f.label :product %><br>
+    <%= f.text_field :product %>
+  </div>
+  <div class="field">
+    <%= f.label :strength %><br>
+    <%= f.text_field :strength %>
+  </div>
+  <div class="field">
+    <%= f.label :marketshare %><br>
+    <%= f.check_box :marketshare %>
+  </div>
+  <div class="field">
+    <%= f.label :volume %><br>
+    <%= f.check_box :volume %>
+  </div>
+  <div class="field">
+    <%= f.label :dashboard %><br>
+    <%= f.text_field :dashboard %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
