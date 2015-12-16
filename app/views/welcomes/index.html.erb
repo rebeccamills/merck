@@ -1,0 +1,87 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Merck Trendbreak Dashboard Portal</h1>
+
+<table>
+  <thead>
+  
+    <tr>
+      <th>Themis</th>
+      <th>Xponent</th>
+      <th>Truven</th>
+      <th>Cerner</th>
+      <th>GE</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @welcomes.each do |welcome| %>
+      <tr>
+        <td><%= welcome.title %></td>
+        <td><%= welcome.description %></td>
+        <td><%= link_to 'Show', welcome %></td>
+        <td><%= link_to 'Edit', edit_welcome_path(welcome) %></td>
+        <td><%= link_to 'Destroy', welcome, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<table class="issuetable">
+  <tr>
+    <th>Cohort Description</th>
+    <th>Market Share</th>
+    <th>Sales Volume</th>
+    <th>Dashboard</th>
+    </tr>
+    <tr>
+    <td>Insulin 600 mg</td>
+    <td><input type="checkbox"></td>
+    <td><input type="checkbox"></td>
+    <td><a href="http://localhost:5601/app/kibana#/dashboard/timeseries_dashboard1?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-5y,mode:quick,to:now))&_a=(filters:!(('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'test1_themis_analyzed*',key:product_name,negate:!f,value:insulin),query:(match:(product_name:(query:insulin,type:phrase)))),('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'test1_themis_analyzed*',key:strength,negate:!f,value:'600mg'),query:(match:(strength:(query:'600mg',type:phrase))))),options:(darkTheme:!f),panels:!((col:1,id:volume_timeseries,panelIndex:1,row:1,size_x:12,size_y:4,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'*')),title:timeseries_dashboard1,uiState:())">link to dashboard</a></td>
+    </tr>
+    <tr>
+    <td>Insulin 300 mg</td>
+    <td><input type="checkbox"></td>
+    <td><input type="checkbox"></td>
+    <td><a href="http://localhost:5601/app/kibana#/dashboard/timeseries_dashboard1?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-5y,mode:quick,to:now))&_a=(filters:!(('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'test1_themis_analyzed*',key:product_name,negate:!f,value:insulin),query:(match:(product_name:(query:insulin,type:phrase)))),('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'test1_themis_analyzed*',key:strength,negate:!f,value:'300mg'),query:(match:(strength:(query:'300mg',type:phrase))))),options:(darkTheme:!f),panels:!((col:1,id:volume_timeseries,panelIndex:1,row:1,size_x:12,size_y:4,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'*')),title:timeseries_dashboard1,uiState:())">link to dashboard</a></td>
+    </tr>
+    <tr>
+    <td>Metformin 300 mg</td>
+    <td><input type="checkbox"></td>
+    <td><input type="checkbox"></td>
+    <td><a href="http://localhost:5601/app/kibana#/dashboard/timeseries_dashboard1?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-5y,mode:quick,to:now))&_a=(filters:!(('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'test1_themis_analyzed*',key:product_name,negate:!f,value:metformin),query:(match:(product_name:(query:metformin,type:phrase)))),('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'test1_themis_analyzed*',key:strength,negate:!f,value:'300mg'),query:(match:(strength:(query:'300mg',type:phrase))))),options:(darkTheme:!f),panels:!((col:1,id:volume_timeseries,panelIndex:1,row:1,size_x:12,size_y:4,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'*')),title:timeseries_dashboard1,uiState:())">link to dashboard</a></td>
+    </tr>
+    <tr>
+    <td>Metformin 600 mg</td>
+    <td><input type="checkbox"></td>
+    <td><input type="checkbox"></td>
+    <td><a href="http://localhost:5601/app/kibana#/dashboard/timeseries_dashboard1?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-5y,mode:quick,to:now))&_a=(filters:!(('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'test1_themis_analyzed*',key:product_name,negate:!f,value:metformin),query:(match:(product_name:(query:metformin,type:phrase)))),('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'test1_themis_analyzed*',key:strength,negate:!f,value:'600mg'),query:(match:(strength:(query:'600mg',type:phrase))))),options:(darkTheme:!f),panels:!((col:1,id:volume_timeseries,panelIndex:1,row:1,size_x:12,size_y:4,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'*')),title:timeseries_dashboard1,uiState:())">link to dashboard</a></td>
+    </tr>
+    <tr>
+    <td>Januvia 600 mg</td>
+    <td><input type="checkbox"></td>
+    <td><input type="checkbox"></td>
+    <td><a href="http://localhost:5601/app/kibana#/dashboard/timeseries_dashboard1?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-5y,mode:quick,to:now))&_a=(filters:!(('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'test1_themis_analyzed*',key:product_name,negate:!f,value:januvia),query:(match:(product_name:(query:januvia,type:phrase)))),('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'test1_themis_analyzed*',key:strength,negate:!f,value:'600mg'),query:(match:(strength:(query:'600mg',type:phrase))))),options:(darkTheme:!f),panels:!((col:1,id:volume_timeseries,panelIndex:1,row:1,size_x:12,size_y:4,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'*')),title:timeseries_dashboard1,uiState:())">link to dashboard</a></td>
+    <tr>
+    <td>...</td>
+    <td><input type="checkbox"></td>
+    <td><input type="checkbox"></td>
+    <td>link to dashboard</td>
+    </tr>
+
+
+
+     <th colspan="3"></th>
+  </tr>
+ 
+  
+</table>
+
+
+
+
+<br>
+
+<%= link_to 'New', new_welcome_path %>
