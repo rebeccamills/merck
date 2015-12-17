@@ -63,7 +63,7 @@ class TrendsController < ApplicationController
 
   def import
     Trend.import(params[:file])
-    redirect_to trend_path, notice: "Trend Added Successfully"
+    redirect_to trends_path, notice: "Trend Added Successfully"
   end
 
   private
