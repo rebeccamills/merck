@@ -38,6 +38,6 @@
 <%= form_tag import_trends_path, multipart: true do %>
   <%= file_field_tag :file %>
   <%= submit_tag "Upload Trends" %>
-<%= end %> 
+<% end %> 
 
 <%= link_to 'New Trend', new_trend_path %>
