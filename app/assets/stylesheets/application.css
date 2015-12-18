@@ -42,7 +42,7 @@ body {
 h1  {
 	color: yellow;
 	text-decoration: none;
-	font-size: 60px;
+	font-size: 40px;
 	margin-bottom: 20px;
 }
 
@@ -50,6 +50,29 @@ h2 {
 	color: #0E258F;
 }
 
+#menu {
+	width: 550px;
+    height: 35px;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #E0F2F7;
+        border-radius: 8px;
+}
+
+#menu ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+
+#menu li { 
+	display: inline; 
+	padding: 20px; 
+}
 
 
 .issuetable td{

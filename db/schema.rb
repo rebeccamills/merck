@@ -11,15 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151216185010) do
+ActiveRecord::Schema.define(version: 20151217173248) do
 
   create_table "trends", force: :cascade do |t|
     t.string   "country"
     t.string   "product"
     t.string   "strength"
-    t.boolean  "marketshare"
-    t.boolean  "volume"
+    t.string   "cp_marketshare"
+    t.string   "cp_volume"
     t.string   "dashboard"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "welcomes", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
