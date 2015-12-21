@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151217173248) do
+ActiveRecord::Schema.define(version: 20151221133728) do
 
   create_table "trends", force: :cascade do |t|
     t.string   "country"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20151217173248) do
     t.string   "dashboard"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.string   "class"
   end
 
   create_table "welcomes", force: :cascade do |t|
